@@ -5,6 +5,10 @@
     padding: 0;
     border: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 body{
     font-family: var(--font-texto);
@@ -13,19 +17,25 @@ body{
 }
 .container{
     margin: 0 auto;
-    
 }
 #topo{
     position: fixed;
     right: 10px;
     bottom: 10px;
 }
+
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
 header {
+    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background4.png) ;
     background-color: #8a2be2;
-    color: #000000;
+    color: #ffffff;
     padding: 30px 0;
     text-align: center;
-    background: url(img/background1.png);
+    /* background: url(img/background1.png); */
 }
 #img {
     width: 50%; /* Reduz para metade do tamanho original */
@@ -37,22 +47,24 @@ header h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
-
 }
-
-
-nav a {
-    text-decoration: none;
-    color: #000;
-    
+nav ul li a{
+    color: #ffffff;
 }
 
 main {
@@ -62,25 +74,66 @@ main {
 }
 
 
-section {
-    background-color: #fff;
+.marvel {
+    background-image: linear-gradient(rgba(108, 105, 105, 0.8),rgba(108, 27, 27, 0.8)), url(img/background3.png) ;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgb(200, 198, 202);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    background-color: rgb(202, 199, 198);
+    color: #981515;
 }
 .hq img {
     float: left; /* A imagem vai flutuar para o lado esquerdo */
     margin-right: 30px; /* Adiciona um espaço entre a imagem e o texto */
 }
 
-.hq p {
-    display: block; /* Garante que o parágrafo fique em uma nova linha */
+
+
+.dc{
+    background-image: linear-gradient(rgba(108, 105, 105, 0.8),rgba(108, 27, 27, 0.8)), url(img/background6.png) ;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    background-color: rgb(202, 199, 198);
+    color: #981515;
 }
-section h2 {
+.container1 {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal (horizontal) */
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.destaque_dc img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+}
+
+.texto_dc {
+    flex: 1; /* Faz com que o texto ocupe o restante do espaço disponível */
+    padding: 0 20px; /* Adiciona um espaçamento lateral ao texto (ajuste conforme necessário) */
+}
+
+.hq p {
+    display:flex; /* Garante que o parágrafo fique em uma nova linha */
+    color: #ffffff;
+}
+.hq1 p{
+    background: right;
+    background: center;
+    flex-direction: column;
+    color: #fff;
+}
+.hq3{
     margin-bottom: 10px;
-   
+    background-image: linear-gradient(rgba(14, 13, 13, 0.8),rgba(132, 62, 62, 0.8)), url(img/background5.png) ;
+    color: #ffffff;
+}
+.hq3 img{
+    border-radius: 25px;
+}
+.hq3 p{
+    text-align: left;
 }
 .hq-info {
     text-align: center;
