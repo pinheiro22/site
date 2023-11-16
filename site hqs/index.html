@@ -9,14 +9,35 @@
 </head>
 
 <body>
+    <!-- <header id="inicio">
+        <div class="container flex">
+            <div class="logo">
+                <img src="img/logo2.png" alt="Logotipo Universo hq´s">
+            </div>
+            <nav class="menu">
+
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conteudo1">Conteúdo Marvel</a></li>
+                    <li><a href="#conteudo2">Conteúdo DC</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
     <header id="inicio">
         <div class="container flex">
             <div class="logo">
                 <img src="img/logo2.png" alt="Logotipo Universo hq´s">
             </div>
             <nav class="menu">
-                <!-- <input type="checkbox" name="check" id="check"> -->
-                <!-- <label for="check">&#x2630;</label> -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="hq"></div>
+                    <div class="hq"></div>
+                    <div class="hq"></div>
+                </div>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#sobre">Sobre</a></li>
@@ -27,72 +48,10 @@
             </nav>
         </div>
     </header>
-    <!-- <main>
-        <div class="container" id="sobre">
-            <img src="img/logo3.png" alt="Logo Dc vs Marvel">
-            <h1>HQ´s</h1>
-            <h2>Sobre hq´s.</h2>
-            <p>"As histórias em quadrinhos têm o objetivo de contar uma história, ficcional ou não, que representa
-                feitos da humanidade em sua época. Então, entendendo a representação que a história em quadrinhos faz, é
-                possível associar sua origem ainda com as pinturas rupestres, que há 35 mil anos eram a forma de
-                representação que os seres humanos usavam para contar e relatar suas vidas e cotidianos, com explicações
-                e descrições sequenciais de acontecimentos
-                Depois da arte rupestre, é possível ainda ver essa forma de narrativa retratando, por exemplo, a
-                unificação do Egito Antigo,  bem como na Grécia Antiga,  com os vasos gregos que representavam
-                atividades cotidianas e feitos épicos. Essas narrativas mostravam a cultura de um dado povo, em uma dada
-                época, representando temas filosóficos e modelos de comportamento que guiavam as populações em suas
-                culturas. Assim, nascem os heróis, que servem como modelos para os cidadãos comuns.
-                No fim do século XIX, com a invenção da prensa a vapor, nasceram os quadrinhos no formato que conhecemos
-                hoje. A prensa a vapor passou, então, a imprimir mais impressões em menos tempo, fazendo com que os
-                impressos alcançassem um público muito maior.
-                Com a invenção do papel-jornal, as impressões ficaram muito mais baratas e acessíveis, e os quadrinhos
-                chegaram a muito mais pessoas, ajudando a combater o analfabetismo e gerando mais leitores. Ainda no
-                século XIX, com o Romantismo em alta, obras com heróis e vilões que misturavam realidade e ficção eram
-                retratadas em tirinhas e quadrinhos, o que contribuiu ainda mais com a popularização do gênero.
-                O gênero ficou muito conhecido nos Estados Unidos, no século XX, por ter sido uma das formas que o país
-                usou para lidar com a Grande Depressão de 1929, com a queda da bolsa da valores. Nessa época, os
-                quadrinhos eram uma forma de entretenimento mais acessível e criava um clima otimista. Isso era possível
-                por meio dos heróis – humanos com habilidades poderosas – que eram retratados combatendo os supostos
-                vilões das épocas, como durante a Segunda Guerra Mundial e na Guerra Fria, quando foram criados vários
-                vilões nazistas e soviéticos."</p>
-        </div>
-    </main> -->
-    <!-- <main>
-    <div class="conteudo">
-        <img src="img/logo3.png" alt="Logo Dc vs Marvel">
-        <p class="descricao"> Uma breve Historia sobre as criação das HQ´S(historias em quadrinhos).</p>
-        <input type="checkbox" id="mostrarMais" class="esconder">
-        <div class="conteudoAdicional">
-            <p>"As histórias em quadrinhos têm o objetivo de contar uma história, ficcional ou não, que representa
-                feitos da humanidade em sua época. Então, entendendo a representação que a história em quadrinhos faz, é
-                possível associar sua origem ainda com as pinturas rupestres, que há 35 mil anos eram a forma de
-                representação que os seres humanos usavam para contar e relatar suas vidas e cotidianos, com explicações
-                e descrições sequenciais de acontecimentos
-                Depois da arte rupestre, é possível ainda ver essa forma de narrativa retratando, por exemplo, a
-                unificação do Egito Antigo,  bem como na Grécia Antiga,  com os vasos gregos que representavam
-                atividades cotidianas e feitos épicos. Essas narrativas mostravam a cultura de um dado povo, em uma dada
-                época, representando temas filosóficos e modelos de comportamento que guiavam as populações em suas
-                culturas. Assim, nascem os heróis, que servem como modelos para os cidadãos comuns.
-                No fim do século XIX, com a invenção da prensa a vapor, nasceram os quadrinhos no formato que conhecemos
-                hoje. A prensa a vapor passou, então, a imprimir mais impressões em menos tempo, fazendo com que os
-                impressos alcançassem um público muito maior.
-                Com a invenção do papel-jornal, as impressões ficaram muito mais baratas e acessíveis, e os quadrinhos
-                chegaram a muito mais pessoas, ajudando a combater o analfabetismo e gerando mais leitores. Ainda no
-                século XIX, com o Romantismo em alta, obras com heróis e vilões que misturavam realidade e ficção eram
-                retratadas em tirinhas e quadrinhos, o que contribuiu ainda mais com a popularização do gênero.
-                O gênero ficou muito conhecido nos Estados Unidos, no século XX, por ter sido uma das formas que o país
-                usou para lidar com a Grande Depressão de 1929, com a queda da bolsa da valores. Nessa época, os
-                quadrinhos eram uma forma de entretenimento mais acessível e criava um clima otimista. Isso era possível
-                por meio dos heróis – humanos com habilidades poderosas – que eram retratados combatendo os supostos
-                vilões das épocas, como durante a Segunda Guerra Mundial e na Guerra Fria, quando foram criados vários
-                vilões nazistas e soviéticos."</p>
-        </div>
-        <label for="mostrarMais" class="botaoMais">Sobre Mais</label>
-    </div>
-</main> -->
 
+    <script src="script.js"></script>
     <main>
-        <div class="conteudo">
+        <div class="sobre">
             <img src="img/logo3.png" alt="Logo Dc vs Marvel">
             <div class="texto">
                 <p class="descricao">Uma breve história sobre as criações das HQs (histórias em quadrinhos).</p>
@@ -126,10 +85,10 @@
 
 
 
-
+    <!-- Marvel Essenciais -->
     <section class="marvel" id="conteudo1">
         <h2>Marvel Essenciais</h2>
-        <div class="hq">
+        <div class="hq1">
             <img src="img/marvel3.png" alt="HQ Marvel 1" class="imagem">
             <p>Uma boa porta de entrada nos quadrinhos da "Casa das Ideias" é a coleção Marvel Essenciais. Iniciada no
                 Brasil pela Panini em 2021, conta com 17 volumes até o momento e traz algumas sagas importantes, além de
@@ -138,13 +97,17 @@
                 longa-metragem Capitão América – Guerra Civil, usa elementos dos quadrinhos enquanto traz novas
                 abordagens, e serve também para o público perceber as diferenças ao se transpor uma obra dos quadrinhos
                 para o cinema.</p>
-            <button class="saibaMaisBtn" onclick="toggleDescricao()">Saiba Mais</button>
-            <div class="conteudoAdicional">
-                <p>Mais informações sobre Marvel Essenciais...</p>
-            </div>
+            <a href="https://youtu.be/3CC_vDDL8Rs?si=3Kpk3UgdlbLG8x0E" target="_blank" id="saibaMaisLink"
+             class="saibaMaisBtn" onclick="toggleDescricao()">Saiba Mais
+            </a>
+                
+           
+                <div class="conteudoAdicional">
+                    <p>Mais informações sobre Marvel Essenciais...</p>
+                </div>
         </div>
     </section>
-    <section class="marvel" id="conteudo1">
+    <!-- <section class="marvel" id="conteudo1">
         <h2>Marvel Essenciais</h2>
         <div class="hq">
             <img src="img/marvel3.png" alt="HQ Marvel 1">
@@ -155,8 +118,44 @@
                 longa-metragem Capitão América – Guerra Civil, usa elementos dos quadrinhos enquanto traz novas
                 abordagens, e serve também para o público perceber as diferenças ao se transpor uma obra dos quadrinhos
                 para o cinema.</p>
+        </div> -->
+
+    <section class="marvel2" id="conteudo2">
+        <h2>Marvel Classic</h2>
+        <div class="hq1">
+            <img src="img/marvel5.png" alt="HQ Marvel 1" class="imagem">
+            <p>Outra alternativa interessante é partir de onde tudo realmente começou. As histórias originais da década
+                de 1960, criadas por nomes como Stan Lee, Jack Kirby, Steve Ditko, Bill Everett, Don Heck e Larry
+                Lieber, estão sendo relançadas pela Panini na Coleção Clássica Marvel, cuja proposta é republicar as
+                aventuras da Marvel em ordem cronológica desde o início. Cada edição é dedicada a um personagem
+                específico, e até o fechamento deste artigo foram publicados 26 volumes. Assim, é possível conferir as
+                histórias que apresentaram os conceitos originais que hoje fazem tanto sucesso nas mais diferentes
+                mídias e tornaram tão conhecidos o Homem-Aranha, Quarteto Fantástico, X-Men, Vingadores, Capitão
+                América, Hulk, Demolidor, Homem de Ferro, Thor e outros.</p>
+                 
+            <a href="https://youtu.be/4-iLsd0nK7I?si=-EMtPRrqccpCQrz6" target="_blank" class="saibaMaisBtn" onclick="toggleDescricao()">Saiba Mais
+               
+            </a>
+            <div class="conteudoAdicional">
+                <p>Mais informações sobre Marvel Classic...</p>
+            </div>
         </div>
-        <section id="hq1">
+    </section>
+
+    <!-- <section id="hq1">
+            <div class="hq1">
+                <div class="container1 flex2">
+                    <div class="texto_dc1">
+                        <img src="img/marvel5.png" alt="HQ Marvel 2">
+                        <h2>Marvel Clássicos</h2>
+                        <p>Outra alternativa interessante é partir de onde tudo realmente começou. As histórias originais da década de 1960, criadas por nomes como Stan Lee, Jack Kirby, Steve Ditko, Bill Everett, Don Heck e Larry Lieber, estão sendo relançadas pela Panini na Coleção Clássica Marvel, cuja proposta é republicar as aventuras da Marvel em ordem cronológica desde o início. Cada edição é dedicada a um personagem específico, e até o fechamento deste artigo foram publicados 26 volumes. Assim, é possível conferir as histórias que apresentaram os conceitos originais que hoje fazem tanto sucesso nas mais diferentes mídias e tornaram tão conhecidos o Homem-Aranha, Quarteto Fantástico, X-Men, Vingadores, Capitão América, Hulk, Demolidor, Homem de Ferro, Thor e outros.</p>
+                        <a href="#" class="saiba-mais-btn">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    <!-- <section id="hq1">
             <div class="hq1">
                 <div class="container1 flex2">
                     <div class="texto_dc1">
@@ -183,14 +182,15 @@
 
 
 
-        </section>
-    </section>
+        </section> -->
 
-    <section class="dc" id="conteudo2">
-        <h2>DC</h2>
+
+    <section class="dc1" id="conteudo3">
+        
         <div class="hq2">
             <img src="img/dc1.png" alt="HQ DC 1" class="imagem">
             <div class="descricao">
+                <h2>DC</h2>
                 <p>A empresa atual é uma amálgama de várias companhias. National Allied Publications foi fundada por
                     Major
                     Malcolm Wheeler-Nicholson em 1934 para publicar More Fun Comics/Fun: The Big Comic Magazine #1 (Fev.
@@ -224,39 +224,13 @@
                     foi
                     usado na linha, e a empresa era coloquialmente conhecida como DC Comics, por anos antes da adoção
                     oficial do nome.</p>
-                <a href="https://youtu.be/82XM2ZAP-oQ?si=AI7G2AVG8iN7Fv6p" target="_blank" id="saibaMaisLink">
-                    <button id="saibaMaisBtn" onclick="toggleDescricao()">Saiba Mais</button>
+                <a href="https://youtu.be/82XM2ZAP-oQ?si=AI7G2AVG8iN7Fv6p" target="_blank" id="saibaMaisBtn" onclick="toggleDescricao()">Saiba Mais
+                 
                 </a>
             </div>
         </div>
     </section>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
-<section class="dc1" id="conteudo2">
-    <div class="hq3">
-        <img src="img/dc3.png" alt="O Cavaleiro das Trevas" class="imagem">
-        <h2>O Cavaleiro das Trevas</h2>
-        <p>O Cavaleiro das Trevas é um clássico da DC e abre a lista de melhores HQs da DC Comics.
-            A revitalização do Batman pelo experiente Frank Miller abre a nossa lista! Com o título original The Dark
-            Knight Returns (1986), a HQ é considerada por muitos a melhor história do Homem Morcego.
-            Ela traz um Batman velho e cansado que resolve voltar a ativa após perceber que o crime continua crescendo.
-            A trama, que possui um monte de cenas icônicas, ainda culmina no famoso confronto com o Homem de Aço. Uma
-            história incrível que mostra todo o potencial de Miller e do Batman!
-            Essa visão de Miller, ao lado de Batman Ano Um, também do autor, foi a responsável por aniquilar de vez com
-            as histórias que ainda traziam um tom mais leve, inspirado no seriado Batman (1969), mescladas ao tom mais
-            aventuresco dado desde os anos 70 por Dennis O’Neil e Neal Adams.</p>
-        <a href="https://youtu.be/7bEtD5fmr7E?si=KW7-dOHp--2IZmL1" target="_blank" id="saibaMaisLink"></a>
-        <button class="saibaMaisBtn" onclick="toggleDescricao()">Saiba Mais</button>
-    </div>
-</section>
-
-<script src="script.js"></script>
-
-
-     <footer id="contato">
+    <footer id="contato">
         <div class="container">
             <div class="copyright">
                 <p>&#169; Somente para fins educativos.</p>
@@ -276,3 +250,10 @@
         <img src="img/topo.png" alt="Ir para o topo do site">
     </a>
 </body>
+
+
+
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+</html>

@@ -29,79 +29,93 @@ body{
     align-items: center;
 }
 
+/* responsivo */
+
+
 /* inicio */
-header {
-    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background4.png) ;
-    background-color: #8a2be2;
-    color: #ffffff;
-    padding: 30px 0;
-    text-align: center;
-    /* background: url(img/background1.png); */
-}
-#img {
-    width: 50%; /* Reduz para metade do tamanho original */
-    height: auto; /* Mantém a proporção original largura:altura */
-}
-
-
-header h1 {
-    margin: 0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style-type: none;
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-nav ul li a{
-    color: #ffffff;
-}
-
-main {
-    padding: 40px 0;
-    background-color: rgb(200, 198, 202);
-    text-align: center;
+header {
+    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background4.png) ;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
 }
 
-/* colocar botao sobre mais */
-/* .conteudo img {
-    float: left;
-    margin-right: 20px;
+.container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.conteudo p {
-    display: block;
+.logo img {
+    width: 100px; /* ajuste o tamanho conforme necessário */
 }
 
-.esconder {
-    display: none;
+.menu {
+    display: flex;
+    align-items: center;
 }
 
-.botaoMais {
+.menu-icon {
     cursor: pointer;
-    color: #007BFF;
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
     font-weight: bold;
 }
 
-.conteudoAdicional {
-    display: none;
+@media only screen and (max-width: 768px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
 }
-
-#mostrarMais:checked + .conteudoAdicional {
-    display: block;
-} */
-
 /* sobre */
 body {
     font-family: Arial, sans-serif;
@@ -110,6 +124,7 @@ body {
 }
 
 main {
+    
     background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background8.png) ;
     display: flex;
     justify-content: center;
@@ -117,24 +132,23 @@ main {
     height: 100vh;
 }
 
-.conteudo {
+.sobre {
     background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background7.png) ;
     color: #ffffff;
-    max-width: 600px;
+    max-width: 1100px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(240, 234, 234, 0.1), 0.1;
 }
 
-.conteudo img {
-    max-width: 50%;
+.sobre img {
+    max-width: 30%;
     height: auto;
     margin-bottom: 30px;
 }
 
 .descricao {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .esconder {
@@ -143,7 +157,7 @@ main {
 
 .botaoMais {
     cursor: pointer;
-    color: #007BFF;
+    color: #2360a1;
     font-weight: bold;
 }
 
@@ -154,53 +168,109 @@ main {
 #mostrarMais:checked + .conteudoAdicional {
     display: block;
 }
+/* conteudo marvel */
+
 .marvel {
+    margin-top: auto;
     background-image: linear-gradient(rgba(108, 105, 105, 0.8),rgba(108, 27, 27, 0.8)), url(img/background3.png) ;
     padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 5px;
+    margin-bottom: 0;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     background-color: rgb(202, 199, 198);
-    color: #981515;
+    color: #b4b0b0;
 }
+
 .hq img {
     float: left; /* A imagem vai flutuar para o lado esquerdo */
     margin-right: 30px; /* Adiciona um espaço entre a imagem e o texto */
 }
+/* Adicione este CSS ao seu arquivo de estilo */
+
+.saibaMaisBtn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(84, 125, 167);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Efeito de transição para a cor de fundo */
+}
+
+.saibaMaisBtn:hover {
+    background-color: rgb(4, 15, 53); /* Cor de fundo ao passar o mouse */
+}
 
 
-
-.dc{
-    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background7.png) ;
+/* Marvel2 */
+.marvel2 {
+    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background3.png) ;
+    background-color: #e2dcdc;
+    color: #adabab;
+    max-width: 2000px;
     padding: 100px;
-    margin-bottom: 30px;
-    border-radius: 0;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-    background-color: rgb(202, 199, 198);
-    color: #ffffff;
-}
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-.dc {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 0;
+    margin-bottom: 0;
 }
 
-.hq2 {
+.hq1 {
     display: flex;
     align-items: center;
 }
 
 .imagem {
+    display: flex;
     max-width: 150px;
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.descricao {
+    flex: 1;
+}
+
+.descricao p {
+    margin-bottom: 15px;
+}
+
+#saibaMaisBtn {
+    background-color: rgb(1, 15, 29);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saibaMaisBtn:hover {
+    background-color: #3c5a86;
+}
+/* conteudo dc */
+.dc {
+    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background7.png) ;
+    background-color: #fff;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(250, 250, 250, 0.1);
+    margin: 20px;
+    margin-bottom: 0;
+}
+.hq2 {
+    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgba(10, 8, 8, 0.8)), url(img/background7.png) ;
+    color: #c5c5c5;
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    display: flex;
+    max-width: 150px;
+    width: auto;
     height: auto;
     margin-right: 20px;
     border-radius: 8px;
@@ -280,52 +350,7 @@ body {
     padding: 0;
 }
 
-.cartao {
-    
-    width: 300px;
-    margin: 20px;
-}
 
-.hq3 {
-    background-image: linear-gradient(rgb(29, 29, 29, 0.8),rgb(29, 29, 29, 0.8)), url(img/background9.png) ;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.imagem {
-    width: 100%; /* Alterado para 100% */
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-h2 {
-    color: #ffffff;
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-p {
-    color: #bbb8b8;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.conteudoAdicional {
-    display: none;
-}
-
-.saibaMaisBtn {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
 
 /* Estilo para mostrar o conteúdo adicional quando o botão "Saiba Mais" é clicado */
 #mostrarMais:checked + .hq3 .conteudoAdicional {
@@ -338,3 +363,31 @@ footer {
     text-align: center;
     padding: 15px 0;
 }
+
+.container flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1;
+    min-width: 300px; /* ou outro valor mínimo desejado */
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para telas menores que 600px (ex: celulares) */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para telas entre 601px e 1024px (ex: tablets) */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Estilos para telas maiores que 1025px (ex: PCs) */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
