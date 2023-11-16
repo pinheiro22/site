@@ -178,6 +178,8 @@ footer{
 .social{
     margin-bottom: 25px;
 }
+
+
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width: 576px){
     /*layout*/
@@ -186,6 +188,120 @@ footer{
     }
     main h1, main h2{
         text-shadow: #000 0.5em 0.5em 0.5em;
+    }
+
+}
+
+/*TABLET PORTAIT*/
+@media (min-width: 768px){
+    /*layout*/
+    .container{
+        max-width: 720px;
+    }
+    main{
+        height: 45vh;
+    }
+    main h1{
+        font-size: 5.5em;
+    }
+    main h2{
+        font-size: 2em;
+    }
+}
+
+/*TABLET LANDSCAPE*/
+@media (min-width: 992px){
+    /*layout*/
+    .container{
+        max-width: 960px;
+    }
+    main{
+        height: 70vh;
+    }
+}
+
+/*PC*/
+@media (min-width: 1200px){
+    body{
+        background: #ffffff;
+    }
+    /*layout*/
+    .container{
+        max-width: 1140px;
+    }
+    header{
+        height: 125px;
+    }
+    .logo img{
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    label{
+        display: none;
+    }
+    nav ul{
+        position: static;
+        height: auto;
+        margin: 50px;
+    }
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+    nav ul li a{
+        color: var(--cor2);
+
+    }    
+    nav ul li a:hover{
+        color: var(--cor4);
+        
+    }
+    /* Sobre */
+    .destaque_sobre{
+        display: inline;
+    }
+    .destaque_sobre img{
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+    #sobre{
+        background-attachment: fixed;
+    }
+
+    
+    .flex3{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* marvel */
+    #marvel{
+        background-attachment: fixed;
+    }
+    #marvel span{
+        display: inline;
+        color: var(--cor4);
+        font-weight: 700;
+    }
+    /* marvel1 */
+    #marvel{
+        background-attachment: fixed;
+    }
+    #marvel1 span{
+        display: inline;
+        color: var(--cor4);
+        font-weight: 700;
+    }
+    /* dc1 */
+    #dc1{
+        background-attachment: fixed;
+    }
+    #dc1 span{
+        display: inline;
+        color: var(--cor4);
+        font-weight: 700;
     }
 
 }
