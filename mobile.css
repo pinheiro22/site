@@ -19,7 +19,7 @@
 
 /* Estilos gerais para dispositivos móveis */
 body {
-    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 /* Estilos para o cabeçalho em dispositivos móveis */
@@ -45,22 +45,64 @@ header {
 }
 
 .menu li {
-    margin: 10px 0; /* Adapte a margem conforme necessário */
+    margin: 8px 0; /* Adapte a margem conforme necessário */
 }
 
 /* Estilos para a seção "Sobre" em dispositivos móveis */
 .sobre {
     flex-direction: column;
+    margin-bottom: 140px;
+    align-items: center;
 }
 
 /* Estilos para as seções "Marvel Essenciais", "Marvel Classic" e "DC" em dispositivos móveis */
-.marvel, .marvel2, .dc1 {
+.marvel{
+    flex-direction: column;
+    text-align: justify;
+}
+.hq1 {
+    margin-bottom: 20px; /* Adapte a margem conforme necessário */
+    text-align:justify;
+    flex-direction: column;
+    margin-top: auto;
+    margin-top: 40px;
+
+}
+
+.marvel2 {
     flex-direction: column;
 }
 .hq1 {
     margin-bottom: 20px; /* Adapte a margem conforme necessário */
-}
+    text-align:justify;
+    flex-direction: column;
+    
+}    
 
+.dc {
+    flex-direction: column;
+}
+.hq1 {
+    margin-bottom: 20px; /* Adapte a margem conforme necessário */
+    text-align:justify;
+    flex-direction: column;
+    
+}    
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Adicione mais estilos conforme necessário */
+}
+.container{
+    grid-template-columns: repeat(3,3fr);
+}
 /* Estilos para o rodapé em dispositivos móveis */
 footer {
     padding: 10px;
@@ -69,7 +111,7 @@ footer {
 .social {
     display: flex;
     justify-content: center;
-    margin-top: 10px; /* Adapte a margem conforme necessário */
+    margin-top: 20px; /* Adapte a margem conforme necessário */
 }
 
 .social a {
